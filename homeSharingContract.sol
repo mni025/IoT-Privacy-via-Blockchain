@@ -55,7 +55,7 @@ contract ownershipContract {
         idInfo[_identifier].owner = buyer;
     }
 
-    pollTenancy(uint _identifier) public view returns (address _ownerName) {
+    function pollTenancy(uint _identifier) public view returns (address _ownerName) {
         _ownerName = idInfo[_identifier].owner;
     }
 }
